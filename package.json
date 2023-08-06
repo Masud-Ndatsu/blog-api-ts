@@ -9,7 +9,7 @@
   "scripts": {
     "test": "jest",
     "prod:build": "tsc",
-    "prod:start": "cd build && node server.js",
+    "prod:start": "node ./build/server.js",
     "start": "concurrently npm:prod:*",
     "start:build": "tsc -w",
     "start:dev": "nodemon ./src/server.ts",
