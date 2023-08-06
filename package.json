@@ -8,9 +8,8 @@
   },
   "scripts": {
     "test": "jest",
-    "prod:build": "tsc",
-    "prod:start": "cd build && server.js",
-    "start": "concurrently 'npm:prod:*'",
+    "build": "npm install && tsc",
+    "start": "node ./build/server.js",
     "start:build": "tsc -w",
     "start:dev": "nodemon ./src/server.ts",
     "dev": "concurrently 'npm:start:*'"
